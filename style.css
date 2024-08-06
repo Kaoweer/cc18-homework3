@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Commissioner", sans-serif;
+    color: rgb(40, 40, 40);
+}
+.main{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    padding: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.icon,nav,.login-btn{
+    width: 30%;
+}
+.icon img{
+    max-height: 2rem;
+}
+nav{
+    text-align: center;
+}
+nav a{
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+}
+.login-btn a{
+    text-decoration: none;
+}
+.login-btn img{
+    height: 1.6em;
+}
+.shopping-icon{
+    position: relative;
+}
+.shopping-icon .badge{
+    min-height: 10px;
+    min-width: 10px;
+    display: flex;
+    font-size: 0.5em;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    width: 10px;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.content{
+    /* background-color: blueviolet; */
+    height: 100%;
+    margin: 75px 100px;
+}
+.content .title{
+    margin-bottom: 30px;
+}
+.shopping-display{
+    /* background-color: red; */
+    display: flex;
+    gap: 36px;
+}
+.shopping-display .shopping-cart{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.shopping-cart .card{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: 15px;
+    gap: 20px;
+    padding: 25px;
+    font-size: 1.5em;
+}
+.card h4{
+    font-weight: 500;
+}
+.thumbnail{
+    height: 150px;
+    width: 150px;
+    border-radius: 16px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.thumbnail h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.thumbnail h5{
+    font-size: 10px;
+}
+.thumbnail .icon{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: screen;
+}
+.thumbnail .icon img{
+    height: 100%;
+}
+.thumbnail h4,h5{
+    color: white;
+    font-weight: 200;
+}
+.google-doc .thumbnail{
+    background: linear-gradient(225deg, rgba(110,147,255,1) 0%, rgba(62,95,156,1) 100%);
+}
+.google-slide .thumbnail{
+    background: linear-gradient(225deg, rgba(255,151,110,1) 0%, rgba(192,94,19,1) 100%);
+}
+.card button{
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #00dbb6;
+    background-color: white;
+    cursor: pointer;
+}
+.card button img{
+    height: 100%;
+    padding: 6px;
+}
+.card .card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.level{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.level .active{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #00dbb6;
+    border-radius: 50%;
+}
+.level .not-active{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+}
+.card select{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+.shopping-display .order-info{
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+}
+.order-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+.subtotal h4{
+    font-weight: 400;
+}
+.order-info .coupon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    max-height: 3rem;
+}
+.order-info .coupon input{
+    width: 100%;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: rgb(249, 249, 249);
+    padding: 12px;
+    border-radius: 4px;
+}
+.order-info .coupon .coupon-btn{
+    background-color: rgb(249, 249, 249);
+    border: none;
+    padding: 5px;
+}
+.order-info .coupon .coupon-btn img{
+    background-color: rgb(249, 249, 249);
+    border: none;
+    height: 1.5rem;
+}
+.order-info .coupon .apply-btn{
+    border: 2px solid #00dbb6;
+    background-color: rgb(249, 249, 249);
+    color: #00dbb6;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 1em 3em;
+    font-weight:700;
+}
+.order-info .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.order-info .total h2{
+    color: #00dbb6;
+    font-size: 2rem;
+}
+.order-info hr{
+    border: 1px solid rgb(233, 233, 233);
+}
+.order-info .checkout-btn{
+    background-color: #00dbb6;
+    border: none;
+    padding: 1em 0em;
+    border-radius: 12px;
+    font-weight: 800;
+    box-shadow: 0px 5px 28px 0px rgba(92,218,184,0.50);
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+}
+.order-info .checkout-btn:active{
+    background-color: #73ddcb;
+}
